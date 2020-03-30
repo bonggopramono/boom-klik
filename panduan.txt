@@ -1,0 +1,10 @@
+1. Letakkan script berikut di atas </head> atau </body>
+
+<script>
+//<![CDATA[
+function downloadJSAtOnload(){var e=document.createElement("script");e.src="LINK_CDN_ANDA",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
+//]]>
+</script>
+
+2. Ganti LINK_CDN_ANDA dengan alamat link cdn yang berisi script antiboomclick
+misalkan https://rawcdn.githack.com/bonggopramono/boom-klik/master/antiboomclick.js
